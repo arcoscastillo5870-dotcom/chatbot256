@@ -1,0 +1,457 @@
+:Sitio Web y Chatbot Familia Castillo:familia_castillo_reembolsos.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familia Castillo - Macrotienda de Muebles & Reembolsos</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts para tipografía elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        beige: {
+                            50: '#FAF9F5',
+                            100: '#F5F2EB',
+                            200: '#EFEBE0',
+                            300: '#E2DAC8',
+                            400: '#C9BBA2',
+                            500: '#B09E7F',
+                            600: '#948162',
+                            700: '#79684C',
+                            800: '#5E503B',
+                            900: '#433829',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FAF9F5;
+        }
+        /* Efecto de scroll suave */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #F5F2EB;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #C9BBA2;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #B09E7F;
+        }
+    </style>
+</head>
+<body class="font-sans text-beige-900 antialiased selection:bg-beige-200">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="bg-white/80 backdrop-blur-md border-b border-beige-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="font-serif font-extrabold text-2xl tracking-wide text-beige-800">FAMILIA CASTILLO</span>
+                <span class="hidden sm:inline-block px-2.5 py-1 bg-beige-100 text-beige-800 text-[10px] font-bold tracking-wider uppercase rounded-full border border-beige-200">Macrotienda</span>
+            </div>
+            <div class="flex items-center gap-6 text-sm font-semibold text-beige-850">
+                <span class="hover:text-beige-600 cursor-pointer transition-colors hidden md:inline">Muebles de Lujo</span>
+                <span class="hover:text-beige-600 cursor-pointer transition-colors hidden md:inline">Garantía Exclusiva</span>
+                <span class="px-4 py-2 bg-beige-800 hover:bg-beige-700 text-white text-xs font-bold tracking-wider uppercase rounded-xl shadow-md transition-all flex items-center gap-1">
+                    <i data-lucide="phone-call" class="w-3.5 h-3.5"></i> Soporte
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO / SECCIÓN PRINCIPAL -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        
+        <!-- ENCABEZADO CON NOMBRE EN GRANDE -->
+        <div class="text-center max-w-4xl mx-auto mb-16">
+            <span class="text-xs font-bold uppercase tracking-widest text-beige-600 bg-beige-100 px-3 py-1.5 rounded-full border border-beige-200 inline-block mb-4">Atención al Cliente Especializada</span>
+            <h1 class="font-serif text-5xl sm:text-7xl font-black text-beige-900 leading-tight tracking-tight">
+                FAMILIA CASTILLO
+            </h1>
+            <p class="font-serif text-xl sm:text-2xl text-beige-750 mt-2 italic">
+                "Donde el diseño de tus sueños encuentra el confort que mereces"
+            </p>
+            <div class="w-24 h-1 bg-beige-400 mx-auto mt-6 rounded-full"></div>
+            <p class="mt-4 text-sm sm:text-base text-beige-600 max-w-2xl mx-auto">
+                Nos dedicamos a fabricar e importar los mejores muebles del país. Tu satisfacción es nuestro pilar fundamental, por ello hemos diseñado este canal inteligente para gestionar cualquier inconveniente y procesar tu reembolso rápidamente.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- PANEL INFORMATIVO (COL: 5) -->
+            <div class="lg:col-span-5 flex flex-col justify-between bg-white border border-beige-200 rounded-3xl p-6 sm:p-8 shadow-sm">
+                <div class="space-y-6">
+                    <div>
+                        <h2 class="font-serif text-2xl font-bold text-beige-800 mb-2">Políticas de Reembolso</h2>
+                        <p class="text-xs text-beige-500">Garantía de tranquilidad y transparencia para tu hogar.</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-start p-4 bg-beige-50 rounded-2xl border border-beige-100">
+                            <div class="p-2.5 bg-beige-200 text-beige-800 rounded-xl">
+                                <i data-lucide="shield-check" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-beige-850">Garantía de Satisfacción</h4>
+                                <p class="text-xs text-beige-600 mt-1">Cuentas con 30 días para reportar cualquier problema de fabricación, diseño o disconformidad.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-start p-4 bg-beige-50 rounded-2xl border border-beige-100">
+                            <div class="p-2.5 bg-beige-200 text-beige-800 rounded-xl">
+                                <i data-lucide="truck" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-beige-850">Daños de Transporte</h4>
+                                <p class="text-xs text-beige-600 mt-1">Si tu mueble sufrió raspaduras o golpes durante la entrega de Familia Castillo, te garantizamos el cambio o reembolso.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-start p-4 bg-beige-50 rounded-2xl border border-beige-100">
+                            <div class="p-2.5 bg-beige-200 text-beige-800 rounded-xl">
+                                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-beige-850">Asistente Virtual Inteligente</h4>
+                                <p class="text-xs text-beige-600 mt-1">Usa nuestro chatbot exclusivo de la derecha. Explica tu caso y te daremos de inmediato la ruta directa para procesarlo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NOTA DE RESPALDO -->
+                <div class="mt-8 pt-6 border-t border-beige-100 flex items-center justify-between text-xs text-beige-500">
+                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-beige-500"></i> Calidad Certificada</span>
+                    <span class="font-semibold text-beige-800">Familia Castillo © 2026</span>
+                </div>
+            </div>
+
+            <!-- CHATBOT DE REEMBOLSOS (COL: 7) -->
+            <div class="lg:col-span-7 flex flex-col h-[550px] bg-white border border-beige-200 rounded-3xl shadow-lg overflow-hidden">
+                <!-- CABECERA DEL CHATBOT -->
+                <div class="bg-beige-800 text-white px-6 py-4 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="relative">
+                            <div class="p-2 bg-white/10 rounded-xl">
+                                <i data-lucide="messages-square" class="w-5 h-5 text-beige-100"></i>
+                            </div>
+                            <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-beige-800 rounded-full"></span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sm tracking-wide">Asistente de Reembolsos</h3>
+                            <p class="text-[10px] text-beige-300">Familia Castillo - En línea</p>
+                        </div>
+                    </div>
+                    <button onclick="restartChat()" class="p-1.5 hover:bg-white/10 text-beige-200 rounded-lg transition-colors" title="Reiniciar chat">
+                        <i data-lucide="refresh-cw" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- CONTENEDOR DE MENSAJES (SCROLL) -->
+                <div id="chat-messages" class="flex-grow p-6 overflow-y-auto space-y-4 bg-beige-50/50 custom-scrollbar">
+                    <!-- Mensaje de bienvenida inicial -->
+                </div>
+
+                <!-- SUGERENCIAS / BOTONES DE RESPUESTA RÁPIDA -->
+                <div id="quick-replies" class="px-6 py-2 bg-white border-t border-beige-100 flex flex-wrap gap-2">
+                    <!-- Se llenarán dinámicamente -->
+                </div>
+
+                <!-- BARRA DE ENTRADA DE TEXTO -->
+                <form id="chat-form" onsubmit="handleSend(event)" class="p-4 bg-white border-t border-beige-200 flex gap-2 items-center">
+                    <input type="text" id="chat-input" placeholder="Escribe aquí tu problema con el mueble..." 
+                           class="flex-grow px-4 py-2.5 bg-beige-50 border border-beige-200 rounded-xl focus:ring-2 focus:ring-beige-500/20 focus:border-beige-500 outline-none text-xs sm:text-sm text-beige-900 transition-all font-medium" required>
+                    <button type="submit" class="p-2.5 bg-beige-800 hover:bg-beige-700 text-white rounded-xl transition-all shadow-md shadow-beige-800/10 flex items-center justify-center">
+                        <i data-lucide="send" class="w-4 h-4"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- SECCIÓN DE PRODUCTOS DESTACADOS (SABOR DE LA MARCA) -->
+        <div class="mt-20 border-t border-beige-200 pt-16">
+            <h2 class="font-serif text-3xl font-bold text-center text-beige-900 mb-2">Colección Distinguida de Temporada</h2>
+            <p class="text-xs text-center text-beige-500 uppercase tracking-widest mb-10">Mobiliario de alta calidad para salas, comedores y dormitorios</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Mueble 1 -->
+                <div class="bg-white border border-beige-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all">
+                    <div class="bg-beige-100 h-56 flex items-center justify-center p-8 relative">
+                        <svg class="w-32 h-32 text-beige-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 18v3M20 18v3M4 11h16M4 15h16M4 11V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="absolute top-4 left-4 bg-beige-800 text-white text-[9px] font-bold tracking-wider px-2 py-1 rounded-md uppercase">Premium</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-serif font-bold text-lg text-beige-900">Sofá Imperial Castilla</h4>
+                        <p class="text-xs text-beige-500 mt-1">Estructura de roble macizo con texturas lino color crema.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-sm font-bold text-beige-800">$1,250.00</span>
+                            <span class="text-[10px] text-beige-400 font-semibold">Envío a todo el país</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mueble 2 -->
+                <div class="bg-white border border-beige-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all">
+                    <div class="bg-beige-100 h-56 flex items-center justify-center p-8 relative">
+                        <svg class="w-32 h-32 text-beige-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 8h16M4 12h16M4 16h16M3 5h18v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5z" stroke-linecap="round"/>
+                        </svg>
+                        <span class="absolute top-4 left-4 bg-beige-800 text-white text-[9px] font-bold tracking-wider px-2 py-1 rounded-md uppercase">Más Vendido</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-serif font-bold text-lg text-beige-900">Mesa de Centro Nobless</h4>
+                        <p class="text-xs text-beige-500 mt-1">Mesa ovalada con acabados de mármol beige y detalles dorados.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-sm font-bold text-beige-800">$450.00</span>
+                            <span class="text-[10px] text-beige-400 font-semibold">Envío a todo el país</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mueble 3 -->
+                <div class="bg-white border border-beige-200 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all">
+                    <div class="bg-beige-100 h-56 flex items-center justify-center p-8 relative">
+                        <svg class="w-32 h-32 text-beige-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" stroke-linecap="round"/>
+                            <path d="M9 3v18M15 3v18M3 9h18M3 15h18" stroke-linecap="round"/>
+                        </svg>
+                        <span class="absolute top-4 left-4 bg-beige-800 text-white text-[9px] font-bold tracking-wider px-2 py-1 rounded-md uppercase">Exclusivo</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-serif font-bold text-lg text-beige-900">Aparador Modular rústico</h4>
+                        <p class="text-xs text-beige-500 mt-1">Cajones amplios de madera tratada con herrajes artesanales.</p>
+                        <div class="mt-4 flex items-center justify-between">
+                            <span class="text-sm font-bold text-beige-800">$890.00</span>
+                            <span class="text-[10px] text-beige-400 font-semibold">Envío a todo el país</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-beige-900 text-beige-200 mt-24 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="md:col-span-2 space-y-4">
+                <span class="font-serif font-extrabold text-xl tracking-wide text-white">FAMILIA CASTILLO</span>
+                <p class="text-xs text-beige-400 max-w-sm leading-relaxed">
+                    Fabricación de muebles de gama alta y distribución nacional. Comprometidos con el desarrollo estético y la máxima comodidad del hogar de las familias ecuatorianas.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">Atención al Cliente</h4>
+                <ul class="space-y-2 text-xs text-beige-400">
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Políticas de Devoluciones</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Garantías de Entrega</span></li>
+                    <li><span class="hover:text-white transition-colors cursor-pointer">Limpieza y Cuidado de Muebles</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-white mb-3">Contacto Directo</h4>
+                <p class="text-xs text-beige-400">Atención Personalizada:</p>
+                <p class="text-sm font-bold text-white mt-1">099 911 8805</p>
+                <p class="text-[10px] text-beige-400 mt-1">Ecuador</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-beige-800 mt-8 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-beige-400">
+            <p>© 2026 Muebles Familia Castillo. Todos los derechos reservados.</p>
+            <div class="flex gap-4">
+                <span class="hover:text-white cursor-pointer transition-colors">Términos y condiciones</span>
+                <span class="hover:text-white cursor-pointer transition-colors">Políticas de Privacidad</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LÓGICA DEL CHATBOT -->
+    <script>
+        // Inicializar iconos de Lucide
+        lucide.createIcons();
+
+        const messagesContainer = document.getElementById('chat-messages');
+        const chatForm = document.getElementById('chat-form');
+        const chatInput = document.getElementById('chat-input');
+        const quickRepliesContainer = document.getElementById('quick-replies');
+
+        // Estado del Chatbot
+        // 0: Esperando problema del usuario
+        // 1: Problema recibido, ofreciendo el número de soporte directo.
+        let chatState = 0;
+
+        // Respuestas rápidas predefinidas de problemas con muebles
+        const sugerenciasProblemas = [
+            "El mueble llegó golpeado o dañado",
+            "El tamaño no coincide con mi sala",
+            "Recibí un color/modelo incorrecto",
+            "Faltaron piezas en la instalación"
+        ];
+
+        // Función para agregar un mensaje al chat
+        function addMessage(sender, text, isSpecialHtml = false) {
+            const messageRow = document.createElement('div');
+            messageRow.className = `flex ${sender === 'user' ? 'justify-end' : 'justify-start'} animate-fade-in`;
+
+            const bubbleClass = sender === 'user' 
+                ? 'bg-beige-850 text-white rounded-2xl rounded-tr-none'
+                : 'bg-beige-100 text-beige-900 rounded-2xl rounded-tl-none border border-beige-200';
+
+            const iconMarkup = sender === 'user'
+                ? ''
+                : `<div class="p-1.5 bg-beige-200 rounded-lg text-beige-800 self-end mr-2 mb-1 hidden sm:block">
+                     <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+                   </div>`;
+
+            messageRow.innerHTML = `
+                <div class="flex items-end max-w-[85%]">
+                    ${iconMarkup}
+                    <div class="${bubbleClass} px-4 py-3 shadow-xs text-xs sm:text-sm whitespace-pre-line leading-relaxed">
+                        ${isSpecialHtml ? text : escapeHtml(text)}
+                    </div>
+                </div>
+            `;
+
+            messagesContainer.appendChild(messageRow);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            lucide.createIcons();
+        }
+
+        function escapeHtml(text) {
+            return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        // Generar botones de sugerencias rápidas
+        function renderQuickReplies(items) {
+            quickRepliesContainer.innerHTML = '';
+            items.forEach(item => {
+                const btn = document.createElement('button');
+                btn.className = "px-3 py-1.5 bg-beige-50 hover:bg-beige-150 border border-beige-200 text-beige-800 hover:text-beige-900 text-[11px] font-semibold rounded-lg transition-all shadow-xs";
+                btn.innerText = item;
+                btn.onclick = () => selectQuickReply(item);
+                quickRepliesContainer.appendChild(btn);
+            });
+        }
+
+        // Al hacer clic en una respuesta rápida
+        function selectQuickReply(text) {
+            chatInput.value = text;
+            handleSend(new Event('submit'));
+        }
+
+        // Enviar mensaje del usuario y gatillar flujo
+        function handleSend(event) {
+            event.preventDefault();
+            const userText = chatInput.value.trim();
+            if (!userText) return;
+
+            // 1. Mostrar mensaje del usuario
+            addMessage('user', userText);
+            chatInput.value = '';
+
+            // Deshabilitar temporáneamente sugerencias
+            quickRepliesContainer.innerHTML = '';
+
+            // 2. Simular escritura y dar respuesta según estado
+            setTimeout(() => {
+                if (chatState === 0) {
+                    // El usuario acaba de explicar su problema. Pasamos al paso de dar el número.
+                    const botResponse = `Lamentamos mucho este inconveniente con tu compra de **Familia Castillo**. Comprendemos lo frustrante que puede ser y nuestro compromiso es darte una solución de inmediato.\n\nPara agilizar tu proceso de reembolso y brindarte una atención prioritaria y personalizada, por favor comunícate directamente con nuestro Director de Atención al Cliente de Familia Castillo:\n\n📞 **099 911 8805**\n\n_Puedes llamarlo o enviarle un mensaje por WhatsApp detallando tu problema. Estaremos felices de resolverlo de inmediato._`;
+                    
+                    const htmlResponse = `
+                        <p class="font-bold text-beige-950 mb-2">Lamentamos mucho este inconveniente con tu compra de Familia Castillo.</p>
+                        <p class="mb-4">Comprendemos tu molestia y nuestro compromiso es darte una solución hoy mismo.</p>
+                        <div class="bg-beige-50 border border-beige-300 p-4 rounded-xl text-center space-y-2 mb-3">
+                            <span class="text-[10px] text-beige-500 uppercase tracking-widest font-bold">Línea Directa de Reembolsos</span>
+                            <h4 class="text-lg sm:text-xl font-bold text-beige-900 tracking-tight flex items-center justify-center gap-1.5">
+                                <i data-lucide="phone-call" class="w-5 h-5 text-emerald-600 animate-pulse"></i>
+                                099 911 8805
+                            </h4>
+                            <p class="text-[10px] text-beige-600">Atención personalizada y procesamiento de reembolsos inmediato.</p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-2 mt-2">
+                            <a href="tel:0999118805" class="px-4 py-2 bg-beige-800 hover:bg-beige-700 text-white rounded-lg text-center font-bold text-xs tracking-wider transition-all flex items-center justify-center gap-1">
+                                <i data-lucide="phone" class="w-3.5 h-3.5"></i> Llamar Ahora
+                            </a>
+                            <button onclick="copiarNumero()" class="px-4 py-2 bg-white hover:bg-beige-50 border border-beige-200 text-beige-800 rounded-lg text-center font-bold text-xs tracking-wider transition-all flex items-center justify-center gap-1">
+                                <i data-lucide="clipboard" class="w-3.5 h-3.5"></i> Copiar Número
+                            </button>
+                        </div>
+                    `;
+
+                    addMessage('bot', htmlResponse, true);
+                    chatState = 1;
+                    
+                    // Mostrar sugerencia de reinicio
+                    renderQuickReplies(["Tengo otra pregunta", "Reiniciar asistente"]);
+                } else {
+                    // Estado 1 en adelante (respuestas adicionales)
+                    const htmlResponse = `
+                        <p class="mb-2">Por favor, recuerda que para procesar tu caso, fotos, o comprobantes, debes comunicarte al canal telefónico directo:</p>
+                        <div class="bg-beige-50 border border-beige-300 p-3 rounded-xl text-center">
+                            <h4 class="text-base font-bold text-beige-900">099 911 8805</h4>
+                        </div>
+                        <p class="text-[11px] text-beige-500 mt-2">¡Estamos listos para atenderte!</p>
+                    `;
+                    addMessage('bot', htmlResponse, true);
+                }
+            }, 800);
+        }
+
+        // Función para simular copiado de número
+        function copiarNumero() {
+            const tempInput = document.createElement('input');
+            tempInput.value = '0999118805';
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            
+            // Creamos un mensaje temporal amigable en el chat
+            addMessage('bot', "¡Número copiado al portapapeles! 📋 (099 911 8805). Ya puedes guardarlo o escribirnos directamente.");
+        }
+
+        // Reiniciar conversación
+        function restartChat() {
+            chatState = 0;
+            messagesContainer.innerHTML = '';
+            
+            // Mensaje de bienvenida inicial
+            const bienvenida = `¡Hola! Bienvenido al centro de atención de reembolsos de la macrotienda **Familia Castillo** 🛋️.\n\nLamentamos profundamente que tu mueble no esté al 100% de tu agrado. Para poder ayudarte de la mejor manera, por favor **indícanos cuál es el inconveniente o problema que tienes con tu compra** escribiéndolo abajo o eligiendo una opción de ayuda.`;
+            addMessage('bot', bienvenida);
+            
+            renderQuickReplies(sugerenciasProblemas);
+        }
+
+        // Iniciar en carga
+        window.onload = function() {
+            restartChat();
+        }
+    </script>
+</body>
+</html>
